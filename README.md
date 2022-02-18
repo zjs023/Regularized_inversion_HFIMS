@@ -12,7 +12,7 @@ Change the current folder to `Regularized_inversion_HFIMS/` using the function `
 ```Matlab
 addpath(genpath('./'));
 ```
-Run the program by calling `GFPDF_inv_cmp` in Command Window, and it will automatically run the inversions of three predefined GF-PDFs and compare the results from different methods.
+Run the program by calling `GFPDF_inv_cmp` in Command Window, and it will automatically run the inversions of three predefined GF-PDFs and compare the results from different methods. Pay attention to the submodule switches (i.e., `option.` and `action.`) if adjustments are needed. 
 
 ### _Packages_
 
@@ -27,3 +27,12 @@ includes the `confplot` function to plot the inverted GF-PDF with standard devia
 
 #### [regutools/](https://github.com/zjs023/Regularized_inversion_HFIMS/tree/master/m%20files/regutools)
 includes the functions (e.g., `l_curve`, `ncsolve`, and ect.) for Tikhonov regularization, from a MATLAB package of Regularization Tools (code from [Per Christian Hansen](https://www.mathworks.com/matlabcentral/fileexchange/52-regtools?s_tid=srchtitle)).
+
+----------------------------------------------------------------------
+#### Contact information
+This program was mainly written by Jiaoshi Zhang ([jiaoshi@wustl.edu](mailto:jiaoshi@wustl.edu)) with contributions from Dr. Jian Wang [@JianWang](https://scholar.google.com/citations?user=0yE2tSMAAAAJ&hl=en) and Dr. Yang Wang [@YangWang](https://scholar.google.com/citations?user=dkU1FrMAAAAJ&hl=en)
+while at Washington University in St. Louis. 
+
+#### How to cite
+
+Please cite [Zhang et al. (2022)](https://amt.copernicus.org/preprints/amt-2021-334/) if only the nonparametric inversion code is used. If the parametric inversion methods are used, please also include [Wang et al. (2019)](https://www.tandfonline.com/doi/full/10.1080/02786826.2019.1628917). Also note that additional references to should also be considered as per above.
