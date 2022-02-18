@@ -5,8 +5,16 @@ This program, published with [Zhang et al. (2022)](https://amt.copernicus.org/pr
 ## Table of contents
 [Getting started](#getting-started)
 
-First, download the whole program package which includes the [code]()  and related [data]() . If use git, clone the repository by
+First, download the whole program package which includes the MATLAB [code](https://github.com/zjs023/Regularized_inversion_HFIMS/tree/master/m%20files) and related [data](https://github.com/zjs023/Regularized_inversion_HFIMS/tree/master/data/FIMS). If use git, clone the repository by:
 ```shell
 git clone git://github.com/zjs023/Regularized_inversion_HFIMS
 ```
+Change the current folder to `Regularized_inversion_HFIMS/` using the function `cd(...)` and add the MATLAB path in the Command Window using
+```Matlab
+addpath(genpath('./'));
+```
+Run the program by calling `GFPDF_inv_cmp` in Command Window, and it will automatically run the inversions of three predefined GF-PDFs and compare the results from different methods.
+
 [Packages](#Packages)
+
+##1. 
