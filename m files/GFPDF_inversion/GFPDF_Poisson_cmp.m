@@ -80,9 +80,9 @@ for i=1:1:3         % ith pre-defined GF
 			if action.generate_new_data
 				sig_pois = sqrt(R_sim_raw);
 				sig_gaus = max(sig_pois)*1e-4; %corresponds to a Gaussian noise level of 0.01% of the the peak noise.                   
-                FIMS.GF.Sigma = sqrt(sig_pois.^2+sig_gaus^2);
-                R_synth(t,:) = sig_gaus.*randn(size(R_sim_raw)) + poissrnd(R_sim_raw);
-                R_synth(t,:) = max(R_synth(t,:),0); % remove negative Gaussian noise        
+				FIMS.GF.Sigma = sqrt(sig_pois.^2+sig_gaus^2);
+				R_synth(t,:) = sig_gaus.*randn(size(R_sim_raw)) + poissrnd(R_sim_raw);
+				R_synth(t,:) = max(R_synth(t,:),0); % remove negative Gaussian noise        
 			else
 				R_synth=FIMS.GF.R_synth{i};
 			end
