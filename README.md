@@ -4,5 +4,8 @@ This program, published with [Zhang et al. (2022)](https://amt.copernicus.org/pr
 
 ## Table of contents
 [Getting started](#getting-started)
-
+First, download the whole program package which includes the [code]()  and related [data]() . If use git, clone the repository by
+```shell
+git clone git://github.com/zjs023/Regularized_inversion_HFIMS
+```
 [Packages](#Packages)
