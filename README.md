@@ -9,8 +9,8 @@ First, download the whole program package which includes the [code](https://gith
 ```shell
 git clone git://github.com/zjs023/Regularized_inversion_HFIMS
 ```
-Change the current folder to the path of *Regularized_inversion_HFIMS*
-```shell
+Change the current folder to the path of `Regularized_inversion_HFIMS/` and add the MATLAB path in the Command Window using
+```Matlab
 addpath(genpath('./'));
 ```
 [Packages](#Packages)
