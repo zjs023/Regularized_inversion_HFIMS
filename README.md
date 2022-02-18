@@ -13,5 +13,8 @@ Change the current folder to `Regularized_inversion_HFIMS/` using the function `
 ```Matlab
 addpath(genpath('./'));
 ```
-Run the program by calling `GFPDF_inv_cmp` in Command Window, and it will automatically run the inversions of the GF-PDFs and compare the results from different methods.
+Run the program by calling `GFPDF_inv_cmp` in Command Window, and it will automatically run the inversions of three predefined GF-PDFs and compare the results from different methods.
+
 [Packages](#Packages)
+
+##1. 
