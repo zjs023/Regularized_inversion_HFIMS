@@ -65,7 +65,6 @@ for i=1:1:3         % ith pre-defined GF
 	end
 	gNorm=[0.8:0.01:2.0];
 	[cPDF_sim,R_sim_raw]=Forward_Response(i);  % ith pre-defined GF
-%         R_sim_raw=round((R_sim_raw)/sum(R_sim_raw)*N_tot);
 	R_sim_raw=R_sim_raw/sum(R_sim_raw)*N_tot;
 	FIMS.GF.R_sim = R_sim_raw;
 	FIMS.GF.gNorm = gNorm;
@@ -86,7 +85,7 @@ for i=1:1:3         % ith pre-defined GF
                 R_synth(t,:) = max(R_synth(t,:),0); % remove negative Gaussian noise        
 			else
 				R_synth=FIMS.GF.R_synth{i};
-            end
+			end
 			FIMS.GF.R=R_synth(t,:);
 			R_sim_tot = horzcat(R_sim_tot, FIMS.GF.R(:)./max(FIMS.GF.R));
 			[g,cPDF_inv,R_inv,t_run]=DMAFIMS_GFPDF_Poisson(FIMS,option,var(k));

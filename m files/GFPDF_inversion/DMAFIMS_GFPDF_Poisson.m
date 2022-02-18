@@ -262,7 +262,6 @@ if option.lognormal_fit
     FIMS.GF.residue_ml=sum(power((FIMS.GF.R/max(FIMS.GF.R)-FIMS.GF.R_inv_ml/max(FIMS.GF.R_inv_ml)),2));
     g=gNorm;
     R_inv = FIMS.GF.R_inv_ml(:)/max(FIMS.GF.R_inv_ml(:));
-%     cPDF = FIMS.GF.cPDF(:);
     cPDF = (FIMS.GF.cPDF(:)./(sum(FIMS.GF.cPDF(:))*(g(2)-g(1)))).';
     t_run = toc;
     if action.show_fitting
@@ -306,7 +305,6 @@ if option.piecewise_fit
     FIMS.GF.residue_pl=sum(power((FIMS.GF.R/max(FIMS.GF.R)-FIMS.GF.R_inv_pl/max(FIMS.GF.R_inv_pl)),2));
     g=gNorm;
     R_inv = FIMS.GF.R_inv_pl(:)/max(FIMS.GF.R_inv_pl(:));
-%     cPDF = FIMS.GF.cPDF(:);
     cPDF = (FIMS.GF.cPDF(:)./(sum(FIMS.GF.cPDF(:))*(g(2)-g(1)))).';
     t_run = toc;
     if action.show_fitting

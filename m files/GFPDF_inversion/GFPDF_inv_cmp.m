@@ -1,11 +1,10 @@
 function GFPDF_inv_cmp(option)
 
     option.residue_cmp = 1;
-    option.mode_parameter_recovery = 0;
 
     action.show_residue_cmp = 1;
     action.show_residue_cmp_stats = 1;
-    action.show_mode_para_cmp = 0;
+
 
     if option.residue_cmp
         option.lognormal_fit = 0;
@@ -43,23 +42,6 @@ function GFPDF_inv_cmp(option)
         option.piecewise_fit = 1;
         GFPDF_pl = GFPDF_Poisson_cmp(option);
         option.piecewise_fit = 0;
-    end
-
-    if option.mode_parameter_recovery
-        option.lognormal_fit = 0;
-        option.piecewise_fit = 0;
-        option.twomey_inversion = 1; 
-        option.tikhonov0_inversion = 0;
-        option.tikhonov1_inversion = 0;
-        option.tikhonov2_inversion = 0;
-        option.lsq_inversion = 0;
-        
-        GFPDF_tm = GFPDF_mode_recovery_cmp(option);
-
-        GFPDF_tm.G_mean_mode 
-        GFPDF_tm.G_std_mode
-        GFPDF_tm.f_mean_mode
-        GFPDF_tm.f_std_mode
     end
 
     if option.residue_cmp && action.show_residue_cmp
