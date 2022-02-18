@@ -32,7 +32,7 @@ includes the functions (e.g., `l_curve`, `ncsolve`, and ect.) for Tikhonov regul
 ### Contact info
 
 This program was mainly written by Jiaoshi Zhang ([jiaoshi@wustl.edu](mailto:jiaoshi@wustl.edu)) with contributions from Dr. [@JianWang](https://scholar.google.com/citations?user=0yE2tSMAAAAJ&hl=en) and Dr. [@YangWang](https://scholar.google.com/citations?user=dkU1FrMAAAAJ&hl=en)
-while at Washington University in St. Louis. Welcome
+while at Washington University in St. Louis. Feel free to contact if you have any questions in running the program or want to contribute.
 
 ### References
 
