@@ -19,3 +19,8 @@ Run the program by calling `GFPDF_inv_cmp` in Command Window, and it will automa
 #### [GFPDF_inversion/](https://github.com/zjs023/Regularized_inversion_HFIMS/tree/master/m%20files/GFPDF_inversion) 
 includes the main scripts for conducting the inversions. Six inversion methods were incorporated here, categorized as parametric and nonparametric inversion methods. The parametric methods assume a prior known distribution of the GF-PDF (i.e., multiple lognormal and piecewise linear function), and use least-squares fittings to search for the best solution, as detailed in [Wang et al. (2019)](https://www.tandfonline.com/doi/full/10.1080/02786826.2019.1628917). While nonparametric methods use a inverse mode introduced in [Zhang et al. (2022)](https://amt.copernicus.org/preprints/amt-2021-334/) and do not require a prior knowledge of the functional form of the GF-PDF. Nonparametric methods includes unregularized least-squares and regularized methods, such as Tikhonov regularization and Twomey's method. 
 
+#### [utilities/](https://github.com/zjs023/Regularized_inversion_HFIMS/tree/master/m%20files/utilities)
+includes subroutines called by the main scripts.
+
+#### [plot/](https://github.com/zjs023/Regularized_inversion_HFIMS/tree/master/m%20files/plot)
+includes the `confplot` function to plot the inverted GF-PDF with standard deviation bounds (from [Michele Giugliano](https://www.mathworks.com/matlabcentral/fileexchange/2683-confplot)).
