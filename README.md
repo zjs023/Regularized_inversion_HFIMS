@@ -23,4 +23,7 @@ includes the main scripts for conducting the inversions. Six inversion methods w
 includes subroutines called by the main scripts.
 
 #### [plot/](https://github.com/zjs023/Regularized_inversion_HFIMS/tree/master/m%20files/plot)
-includes the `confplot` function to plot the inverted GF-PDF with standard deviation bounds (from [Michele Giugliano](https://www.mathworks.com/matlabcentral/fileexchange/2683-confplot)).
+includes the `confplot` function to plot the inverted GF-PDF with standard deviation bounds (code from [Michele Giugliano](https://www.mathworks.com/matlabcentral/fileexchange/2683-confplot)).
+
+#### [regutools/](https://github.com/zjs023/Regularized_inversion_HFIMS/tree/master/m%20files/regutools)
+includes the functions (e.g., `l_curve`, `ncsolve`, and ect.) for Tikhonov regularization, from a MATLAB package of Regularization Tools (code from [Per Christian Hansen](https://www.mathworks.com/matlabcentral/fileexchange/52-regtools?s_tid=srchtitle)).
