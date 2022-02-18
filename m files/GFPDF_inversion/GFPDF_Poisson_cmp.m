@@ -24,7 +24,7 @@ GFbins = 20;
 MLmodes = [1,2,3];
 % PLbins = [10,15,20,25,30];
 PLbins = [15,15,15];
-N_trial=10; % run 10 trials and take average
+N_trial=500; % run 10 trials and take average
 
 var2str = @(~) inputname(1);
 var_str={var2str(GFbins),var2str(MLmodes),var2str(PLbins)};
