@@ -5,8 +5,12 @@ This program, published with [Zhang et al. (2022)](https://amt.copernicus.org/pr
 ## Table of contents
 [Getting started](#getting-started)
 
-First, download the whole program package which includes the [code](https://github.com/zjs023/Regularized_inversion_HFIMS/tree/master/m%20files) and related [data](https://github.com/zjs023/Regularized_inversion_HFIMS/tree/master/data/FIMS) . If use git, clone the repository by
+First, download the whole program package which includes the [code](https://github.com/zjs023/Regularized_inversion_HFIMS/tree/master/m%20files) and related [data](https://github.com/zjs023/Regularized_inversion_HFIMS/tree/master/data/FIMS). If use git, clone the repository by:
 ```shell
 git clone git://github.com/zjs023/Regularized_inversion_HFIMS
+```
+Change the current folder to the path of *Regularized_inversion_HFIMS*
+```shell
+addpath(genpath('./'));
 ```
 [Packages](#Packages)
