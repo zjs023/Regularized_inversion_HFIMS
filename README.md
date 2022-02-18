@@ -29,12 +29,12 @@ includes the `confplot` function to plot the inverted GF-PDF with standard devia
 includes the functions (e.g., `l_curve`, `ncsolve`, and ect.) for Tikhonov regularization, from a MATLAB package of Regularization Tools (code from [Per Christian Hansen](https://www.mathworks.com/matlabcentral/fileexchange/52-regtools?s_tid=srchtitle)).
 
 ----------------------------------------------------------------------
-### Contact info
+#### _Contact info_
 
 This program was mainly written by Jiaoshi Zhang ([jiaoshi@wustl.edu](mailto:jiaoshi@wustl.edu)) with contributions from Dr. [@JianWang](https://scholar.google.com/citations?user=0yE2tSMAAAAJ&hl=en) and Dr. [@YangWang](https://scholar.google.com/citations?user=dkU1FrMAAAAJ&hl=en)
 while at Washington University in St. Louis. Feel free to contact if you have any questions in running the program or want to contribute.
 
-### References
+#### _References_
 
 [Zhang, J., Wang, Y., Spielman, S., Hering, S., and Wang, J.: Regularized inversion of aerosol hygroscopic growth factor probability density function: Application to humidity-controlled fast integrated mobility spectrometer measurements, Atmos. Meas. Tech. Discuss. [preprint], https://doi.org/10.5194/amt-2021-334, in review, 2021.](https://amt.copernicus.org/preprints/amt-2021-334/)
 
@@ -58,6 +58,6 @@ while at Washington University in St. Louis. Feel free to contact if you have an
 
 [Markowski, G. R.: Improving Twomey's Algorithm for Inversion of Aerosol Measurement Data, Aerosol Science and Technology, 7, 127-141, 10.1080/02786828708959153, 1987.](https://www.tandfonline.com/doi/abs/10.1080/02786828708959153)
 
-#### How to cite
+#### _How to cite_
 
 Please cite [Zhang et al. (2022)](https://amt.copernicus.org/preprints/amt-2021-334/) if only the nonparametric inversion methods are used. One should also cite [Wang et al. (2019)](https://www.tandfonline.com/doi/full/10.1080/02786826.2019.1628917) if the parametric inversion methods are used. 
