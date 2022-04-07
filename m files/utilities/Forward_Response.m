@@ -1,7 +1,7 @@
 function [cPDF_sim,R_sim]=Forward_Response(case_num)
 %%% this function uses input of x to create a non linear function set so
 %%% that least sequare method can be used
-global FIMS paramt_FIMS
+global FIMS 
 %%% set boundaries for x
 %%% remember to change this accordingly! f,G,sigma
 action.plot_simulated_GFPDF = 0;

@@ -10,11 +10,11 @@ if nargin < 1
     option.lsq_inversion = 0;
 end
 
-action.generate_new_data = 0;
+action.generate_new_data = 1;
 action.show_fitting = 1;
 action.show_L_curve = 0;
 
-global paramt_FIMS paramt_mission FIMS
+global FIMS
 flt_num = 332;
 image_bins = 30;
 N_tot = 100;
@@ -24,7 +24,7 @@ GFbins = 20;
 MLmodes = [1,2,3];
 % PLbins = [10,15,20,25,30];
 PLbins = [15,15,15];
-N_trial=500; % run 10 trials and take average
+N_trial=10; % run 10 trials and take average
 
 var2str = @(~) inputname(1);
 var_str={var2str(GFbins),var2str(MLmodes),var2str(PLbins)};
@@ -78,11 +78,13 @@ for i=1:1:3         % ith pre-defined GF
 		for t=1:N_trial
 			fprintf('%d.\n',t);
 			if action.generate_new_data
-				sig_pois = sqrt(R_sim_raw);
-				sig_gaus = max(sig_pois)*1e-4; %corresponds to a Gaussian noise level of 0.01% of the the peak noise.                   
-				FIMS.GF.Sigma = sqrt(sig_pois.^2+sig_gaus^2);
-				R_synth(t,:) = sig_gaus.*randn(size(R_sim_raw)) + poissrnd(R_sim_raw);
-				R_synth(t,:) = max(R_synth(t,:),0); % remove negative Gaussian noise        
+				sig_gaus = 0.05;
+				R_raw_Gaus = R_sim_raw.*(1+sig_gaus*randn(size(R_sim_raw)));
+				R_poiss = poissrnd(R_raw_Gaus);
+				R_synth(t,:) = R_poiss;
+
+				sig_poiss = sqrt(R_poiss+power(sig_gaus*R_poiss,2));
+				FIMS.GF.Sigma = sig_poiss;     
 			else
 				R_synth=FIMS.GF.R_synth{i};
 			end
